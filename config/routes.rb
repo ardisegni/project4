@@ -1,4 +1,7 @@
 Project4::Application.routes.draw do
+  match 'states/filter' => 'states#filter'
+    match ':controller(/:action(/:id(.:format)))'
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
