@@ -1,3 +1,7 @@
-<% @substate.each do |x| %>
-<%= x %>
-<% end %>
+<h1><%= @message %></h1>
+<ul>
+<% if params[:substring]!=nil 
+ @states.each do |x| %>
+  <li> <%=x %> </li>  
+<% end end %>
+</ul>
