@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Project 4 - Problem 4</title>
+    </head>
+    <body>
+        <div class="menu">
+            <div class="space"></div>
+            <span class="left"></span>
+            <span class="mid"><a href="inventory-selected.html">Inventory</a></span>
+            <span  class="right"></span>
+            <div class="space"></div>
+            <span class="left"></span>
+            <span class="mid"><a href="notableorder.html">Order&nbsp;Information</a></span>
+            <span  class="right"></span>
+            <div class="space"></div>
+            <span class="left"></span>
+            <span class="mid"><a href="notableaccounts.html">Accounts</a></span>
+            <span  class="right"></span>
+            <div class="space"></div>
+            <span class="left"></span>
+            <span class="mid"><a href="notableshippers.html">Shippers</a></span>
+            <span  class="right"></span>
+            <div class="space"></div>
+            <span class="left"></span>
+            <span class="mid"><a href="notablesuppliers.html">Suppliers</a></span>
+            <span  class="right"></span>
+        </div>
+        <div class="large"></div>
+        </br>
+        <div class = "menu large">
+            <% labels.each do |t| %>
+                <div class="space"></div>
+                <% if t[:url] == selected %>  
+                    <span class="left-selected"></span>
+                    <span class="mid-selected"><%=  link_to t[:label], "show2?query=#{t[:url]}", :id => "selected" %></span>
+                    <span class="right-selected"></span>
+                <% else %>
+                    <span class="left"></span>
+                    <span class="mid"><%=  link_to t[:label], "show2?query=#{t[:url]}" %></span>
+                    <span class="right"></span>
+                <% end 
+                    end%>
+        </div>
+    </body>
+</html>

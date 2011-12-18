@@ -1,0 +1,85 @@
+body {
+    font-size:13px;
+    font-family:Tahoma;
+}
+
+.menu {
+    border-collapse:collapse;
+    float:left;  
+}
+
+a:visited, a:active, a:link {
+	color: black;
+	text-decoration: none;
+}
+
+a:hover {
+    color:#cc6600;
+    cursor:pointer;
+}
+
+.space {
+	float: left;
+	width: 5px;
+    border-bottom: 1pt solid #CCCCCC;
+    height: 16px;
+}
+
+.large {
+    border-bottom: 1pt solid #CCCCCC;
+    height: 16px;
+    width: 100%;
+}
+
+.left {
+    float:left;
+    background-image: url("left.gif") ;
+    width:1px;
+    padding:1px;
+    height:14px;    
+    margin-left:0px;
+}
+
+.mid {
+    float:left;
+    background-image:url("mid.gif");    
+}
+
+.right {
+    visibility:visible;
+    float:left;
+    background-image:url("right.gif");
+    width:1px;   
+    padding:1px;
+    height:14px;
+} 
+
+.left-selected {
+    float:left;
+    background-image: url("left-selected.gif") ;
+    width:1px;
+    padding:1px;
+    height:14px;    
+    margin-left:0px;
+    border-bottom: 1pt solid #FFFFFF;
+}
+
+.mid-selected {
+    float: left;
+    background-image: url("mid-selected.gif");    
+    border-bottom: 1pt solid #FFFFFF;
+}
+
+.right-selected {
+    visibility:visible;
+    float:left;
+    background-image:url("right-selected.gif");
+    width:1px;   
+    padding:1px;
+    height:14px;
+    border-bottom: 1pt solid #FFFFFF;
+} 
+
+#selected {
+    font-weight: bold;
+}

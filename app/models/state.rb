@@ -1,9 +1,7 @@
 class State < ActiveRecord::Base
 
   def self.filter(my_string)
-    
-    if my_string !=nil
-
+    if my_string != nil
       states = ["Alabama", "Alaska", "Arizona", "Arkansas", "California",
         "Colorado", "Connecticut", "Delaware", "Florida", "Georgia",
         "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa",
@@ -20,10 +18,11 @@ class State < ActiveRecord::Base
           @substate.push(s)
         end
       end
-      
+      if @substate.empty? == true
+        @substate = ["There are no matching states"]
+      end
     end
     return @substate
-    
   end
-
+  
 end

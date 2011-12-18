@@ -1,0 +1,2 @@
+<% ar = [{ :label => "Inventory", :url => "inventory" }, { :label => "Order Information", :url => "order" }, { :label => "Accounts", :url => "accounts" }, { :label => "Shippers", :url => "shippers" }, { :label => "Suppliers", :url => "suppliers" } ] %>
+<%= render :partial => "layouts/foo", :locals => { :selected => @selected, :labels => ar } %>
