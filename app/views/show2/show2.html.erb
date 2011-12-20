@@ -1,2 +1,2 @@
-<% ar = [{ :label => "Inventory", :url => "inventory" }, { :label => "Order Information", :url => "order" }, { :label => "Accounts", :url => "accounts" }, { :label => "Shippers", :url => "shippers" }, { :label => "Suppliers", :url => "suppliers" } ] %>
-<%= render :partial => "layouts/foo", :locals => { :selected => @selected, :labels => ar } %>
+<% ar = [{ :label => "Books", :url => "books" }, { :label => "Electronics", :url => "electronics" }, { :label => "Grocery", :url => "grocery" }, { :label => "Clothing", :url => "clothing" }, { :label => "Sports", :url => "sports" } ] %>
+<%= render :partial => "layouts/tabs", :locals => { :selected => @selected, :labels => ar } %>

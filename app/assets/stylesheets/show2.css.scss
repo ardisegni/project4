@@ -5,7 +5,11 @@ body {
 
 .menu {
     border-collapse:collapse;
-    float:left;  
+    float:left; 
+    border-bottom: 1pt solid #CCCCCC;
+    margin-bottom: 40px;
+    height: 16px;
+    width: 100%;
 }
 
 a:visited, a:active, a:link {
@@ -25,15 +29,9 @@ a:hover {
     height: 16px;
 }
 
-.large {
-    border-bottom: 1pt solid #CCCCCC;
-    height: 16px;
-    width: 100%;
-}
-
 .left {
     float:left;
-    background-image: url("left.gif") ;
+    background-image: url("left.gif");
     width:1px;
     padding:1px;
     height:14px;    
@@ -42,7 +40,9 @@ a:hover {
 
 .mid {
     float:left;
-    background-image:url("mid.gif");    
+    background-image:url("mid.gif"); 
+    padding:1px;
+    height:14px;
 }
 
 .right {
@@ -68,6 +68,8 @@ a:hover {
     float: left;
     background-image: url("mid-selected.gif");    
     border-bottom: 1pt solid #FFFFFF;
+    padding:1px;
+    height:14px;
 }
 
 .right-selected {
